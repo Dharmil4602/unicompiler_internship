@@ -1,0 +1,403 @@
+:root
+{
+    --color-primary: #7562e0;
+    --color-primary-variant: rgba(102, 0, 255, 0.2);
+    --color-white: #fff;
+    --color-light: #f5f5f5;
+    --color-black: #0f0f1b;
+    --color-dark: #4b4a53;
+
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 92%;
+}
+
+/* FOR LAPTOP AND TABLET */
+@media screen and (max-width: 1024px){
+    h1
+    {
+        font-size: 3.6rem;
+    }
+
+    h2
+    {
+        font-size: 1.6rem;
+    }
+
+    .container
+    {
+        width: var(--container-width-md);
+    }
+
+    /* ======================NAVBAR================== */
+    nav
+    {
+        background: var(--color-black);
+        height: 5rem;
+    }
+
+    .nav-container
+    {
+        position: relative;
+        width: 100vw;
+    }
+
+    .logo
+    {
+        margin-left: 2rem;
+        width: 6rem;
+    }
+
+    .nav-menu
+    {
+        position: fixed;
+        flex-direction: column;
+        width: 18rem;
+        height: fit-content;
+        right: 0;
+        top: 5rem;
+        gap: 0;
+        display: none;
+    }
+
+    .nav-menu li
+    {
+        width: 100%;
+        height: 5.4rem;
+    }
+
+    .nav-menu li a
+    {
+        background: var(--color-primary);
+        box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        color: var(--color-white);
+    }
+
+    .nav-menu li a:hover
+    {
+        background: var(--color-light);
+        color: var(--color-black);
+        cursor: pointer;
+    }
+
+    .nav-container button
+    {
+        display: inline-block;
+        margin-right: 1.4rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: 2.3rem;
+    }
+
+    #close-menu-btn
+    {
+        display: none;
+    }
+
+    /* =================HEADER===================== */
+
+    header
+    {
+        height: 100%;
+        padding: 3rem 0 0;
+    }
+
+    .header-container
+    {
+        /* grid-template-columns: 30% 70%; */
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .header-left
+    {
+        margin-bottom: 5rem;
+    }
+
+    .header-right
+    {
+        align-self: flex-end;
+        height: 100%;
+        /* margin-bottom: 2rem; */
+    }
+
+    .header-right-bg
+    {
+        width: 20rem;
+        height: 20rem;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        /* display: none; */
+    }
+
+    .header-image
+    {
+        width: 100%;
+        /* height: 100%; */
+        left: -1rem;
+        bottom: 3rem;
+    }
+
+    .header-socials
+    {
+        right: -1rem;
+    }
+
+    .header-socials a{
+        color: var(--color-black);
+    }
+
+    /* ==============COMPANIES================ */
+
+    .companies-container
+    {
+        gap: 0;
+    }
+
+    .companies-container span
+    {
+        padding: 1.5rem;
+    }
+
+    /* ==============SERVICES=============== */
+
+    .services-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .services-left
+    {
+        padding: 1rem;
+    }
+
+    .services-left h1
+    {
+        font-size: 5rem;
+    }
+
+    .services-cards
+    {
+        gap: 1rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .services-card
+    {
+        padding: 2rem 2rem;
+    }
+
+    /* ===================PORTFOLIO================= */
+
+    .portfolio-head h3
+    {
+        width: 40%;
+    }
+
+    .portfolio-head-right
+    {
+        width: auto;
+    }
+
+    /* ======================CONTACT=========== */
+
+    .contact-container
+    {
+        gap: 2rem;
+    }
+
+    .contact-socials a
+    {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE CSS */
+
+@media screen and (max-width: 700px) {
+    .container
+    {
+        width: var(--container-width-sm);
+    }
+
+    section
+    {
+        padding: 4rem 0;
+        margin: 4rem 0;
+    }
+
+    h1
+    {
+        font-size: 2.8rem;
+    }
+
+    h2
+    {
+        font-size: 1.4rem;
+    }
+
+    h3
+    {
+        font-size: 1.2rem;
+    }
+
+    .lead
+    {
+        width: var(--container-width-sm);
+    }
+
+    /* ==================NAVBAR================= */
+
+    .nav-container button
+    {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .logo
+    {
+        margin-left: 0rem;
+    }
+
+    /* ====================HEADER================== */
+
+    header
+    {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .header-container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .header-left
+    {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .header-left p
+    {
+        margin-bottom: 0.5rem 0 1.2rem;
+    }
+
+    .header-image img
+    {
+        position: relative;
+        top: 0.5rem;
+        left: 9rem;
+        height: 70%;
+        width: 70%;
+    }
+
+    .header-right-bg
+    {
+        bottom: 20%;
+    }
+
+    .header-socials
+    {
+        right: 1rem;
+    }
+
+    .companies-container
+    {
+        grid-template-columns: repeat (3, 1fr);
+    }
+
+    .companies-container span
+    {
+        height: 5rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .services-left
+    {
+        display: none;
+    }
+
+    .services-cards
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .services-card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0rem;
+    }
+    /* ====================PORTFOLIO=============== */
+    .portfolio-head
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .portfolio-head h3, .portfolio-head-right
+    {
+        width: var(--container-width-sm);
+    }
+
+    .portfolio-projects
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header-left
+    {
+        position: relative;
+        top: 2rem;
+        /* margin-bottom: 22rem; */
+    }
+
+    .header-left h1
+    {
+        font-size: 2rem;
+    }
+
+    .header-left p
+    {
+        margin: 2px;
+    }
+
+    .header-right-bg
+    {
+        height: 10rem;
+    }
+    
+    .header-image img
+    {
+        position: relative;
+        left: 6rem;
+        height: 100%;
+        /* top: -2rem; */
+        /* margin: 5rem 0; */
+    }
+
+    .header-socials
+    {
+        right: 0rem;
+        bottom: 5rem;
+    }
+
+}
